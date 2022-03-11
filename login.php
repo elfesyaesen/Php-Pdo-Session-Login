@@ -14,7 +14,7 @@ if(!empty($_SESSION['email'])) { header('location:index.php'); }
         $_SESSION['email'] =  $row['email'];
         $_SESSION['firstname'] = $row['firstname'];
         $_SESSION['lastname'] = $row['lastname'];
-        $_SESSION['user_id'] = $row['id'];
+        $_SESSION['user_id'] = $row['user_id'];
         header("location:index.php");
       }
       else { print 'Bilgileriniz Hatalı...!'; }
