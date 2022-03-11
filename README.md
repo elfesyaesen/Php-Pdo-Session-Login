@@ -9,3 +9,5 @@
  3_logout.php içerisinde session sonlandırma ve yönlendirme işlemleri mevcuttur.
  
  4_index.php içerisinde session kontrolu ve yönlendirme yapılmıştır.
+ 
+ 5_Kullanıcı Mail : test@test.com , şifre : 123456
