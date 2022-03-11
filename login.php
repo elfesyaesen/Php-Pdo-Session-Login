@@ -8,7 +8,8 @@ if(!empty($_SESSION['email'])) { header('location:index.php'); }
      }
     else {
       $query = $pdo->prepare("SELECT * FROM users WHERE email=? AND password=? ");
-      $query->execute(array($email,$password));
+      $veryfy_password = md5($password);
+      $query->execute(array($email,$veryfy_password));
       $row = $query->fetch(PDO::FETCH_ASSOC);
       if(count($row) > 0) {
         $_SESSION['email'] =  $row['email'];
