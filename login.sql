@@ -9,4 +9,4 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 
 INSERT INTO `users` (`user_id`, `firstname`, `lastname`, `email`, `password`) VALUES
-(2, 'test', 'test', 'test@test.com', '123456');
+(2, 'test', 'test', 'test@test.com', 'e10adc3949ba59abbe56e057f20f883e');
